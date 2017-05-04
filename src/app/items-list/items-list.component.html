@@ -1,0 +1,23 @@
+<md-toolbar>
+  <span>List of items</span>
+
+  <div>
+    <button class="addButton" (click)="addItem()">ADD</button>
+  </div>
+</md-toolbar>
+
+
+<table class="table-content">
+  <th *ngFor="let colName of columnNameInput">
+    {{colName}}
+  </th>
+  <tr *ngFor="let itemName of itemNameInput; let i=index">
+    <td *ngFor="let colName of columnNameInput">
+      <input *ngIf="colName != 'delete'"/>
+      <div>
+        <button class="deleteButton" *ngIf="colName == 'delete'" (click)="deleteItem(i)">DEL</button>
+      </div>
+    </td>
+  </tr>
+
+</table>

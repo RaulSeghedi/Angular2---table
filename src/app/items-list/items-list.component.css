@@ -1,0 +1,14 @@
+.addButton{
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  border-radius: 50%;
+  background: deepskyblue;
+  color: white;
+}
+
+.deleteButton{
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
